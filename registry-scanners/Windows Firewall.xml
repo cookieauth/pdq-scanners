@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AdminArsenal.Export Code="PDQInventory" Name="PDQ Inventory" Version="19.4.40.0" MinimumVersion="14.0">
+  <ScanProfile>
+    <Collections type="list" />
+    <Scanners type="list">
+      <Scanner>
+        <ExcludePattern></ExcludePattern>
+        <Hive>HKEY_LOCAL_MACHINE</Hive>
+        <IncludePattern>SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile\**\</IncludePattern>
+        <RowLimit value="2500" />
+        <TypeName>Registry</TypeName>
+        <SourceScannerId value="36" />
+      </Scanner>
+    </Scanners>
+    <Description></Description>
+    <ScanProfileId value="11" />
+    <Name>Windows Firewall Registry Scanner</Name>
+    <ScanAs>LocalSystem</ScanAs>
+    <ScheduleTriggerSet name="ScheduleTriggers">
+      <Triggers type="list" />
+    </ScheduleTriggerSet>
+  </ScanProfile>
+</AdminArsenal.Export>
