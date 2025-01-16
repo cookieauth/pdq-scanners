@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AdminArsenal.Export Code="PDQInventory" Name="PDQ Inventory" Version="19.4.40.0" MinimumVersion="14.0">
+  <ScanProfile>
+    <Collections type="list">
+      <ScanProfileCollection>
+        <CollectionId value="34" />
+        <ScanProfileId value="null" />
+      </ScanProfileCollection>
+    </Collections>
+    <Scanners type="list">
+      <Scanner>
+        <ExcludePattern></ExcludePattern>
+        <Hive>HKEY_LOCAL_MACHINE</Hive>
+        <IncludePattern>SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\**\</IncludePattern>
+        <RowLimit value="2500" />
+        <TypeName>Registry</TypeName>
+        <SourceScannerId value="34" />
+      </Scanner>
+    </Scanners>
+    <Description></Description>
+    <ScanProfileId value="10" />
+    <Name>WSUS RegKeys</Name>
+    <ScanAs>LocalSystem</ScanAs>
+  </ScanProfile>
+</AdminArsenal.Export>
